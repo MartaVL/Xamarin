@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="L5RHelper.MainPage">
+
+    <StackLayout x:Name="layout">
+        <!--<Entry Text="Indicar tirada (XgY)" x:Name="roll" IsPassword="False"/>-->
+        <Label Text="¿Que tipo de usuario eres?"/>
+        <RadioButton Text="Master" 
+                     TextColor="Blue"
+                     GroupName="User type"
+                     x:Name="checkMaster"/>
+        
+        <RadioButton Text="Player"
+                     IsChecked="True"
+                     TextColor="Blue"
+                     GroupName="User type"
+                     x:Name="checkPlayer"/>
+
+        <Button Text="Empezar" Clicked="Button_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>

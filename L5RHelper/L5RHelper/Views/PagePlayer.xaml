@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="L5RHelper.PagePlayer">
+    
+    <StackLayout>
+        
+        <Editor x:Name="EditorIpServerConnection" Placeholder="Enter Master's Ip Address" PlaceholderColor="Gray"/>
+        
+        <Button Text="Connect with master"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="ButtonConnection_Clicked"
+                x:Name="connect"/>
+
+        <Label Text="" x:Name="LabelError" TextColor="Red"/>
+
+        <Button Text="Roll Dice"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="ButtonRoll_Clicked"
+                IsEnabled="False"
+                x:Name="roll"/>
+        
+        <Label Text="" x:Name="LabelResult" TextColor="Blue"/>
+        
+        </StackLayout>
+</ContentPage>
